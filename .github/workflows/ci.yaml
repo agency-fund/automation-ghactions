@@ -1,0 +1,16 @@
+name: ci
+
+on:
+  repository_dispatch:
+    types: [webhook]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output message
+        run: echo "The GitHub Actions workflow was successfully triggered."
