@@ -41,6 +41,9 @@
         - Accept: application/vnd.github+json
         - Authorization: Bearer TOKEN
         - X-GitHub-Api-Version: 2022-11-28
+    6. Click Continue.
+    7. Click Test action.
+    8. Go to the new repository's main page, click on Actions, and confirm that a workflow run was triggered.
 
 ## Modifying a replicated system
 
