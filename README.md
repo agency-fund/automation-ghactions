@@ -4,7 +4,7 @@
 
 - triggering event: Any trigger in Zapier.
 - resulting action: GitHub Actions workflow. *Currently just outputs a message that the workflow was triggered.*
- 
+
 ## Components
 
 - this GitHub repository
@@ -49,3 +49,8 @@
 
 - To change what the GH Actions workflow actually does, update the .github/workflows/ci.yaml file.
 - To complete the Zap, set up the trigger and then publish the Zap.
+
+## External documentation
+
+- https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#repository_dispatch
+- https://zapier.com/page/webhooks/
