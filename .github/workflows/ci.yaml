@@ -12,5 +12,7 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Output message
-        run: echo "The GitHub Actions workflow was successfully triggered."
+      - env:
+          FEELING: ${{ github.event.client_payload.feeling }}
+        name: Output message
+        run: echo "The GitHub Actions workflow was successfully triggered by feeling $FEELING."
